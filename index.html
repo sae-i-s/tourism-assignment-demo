@@ -9,25 +9,27 @@
 
   <body>
     <header id="header">
-      <nav>
-        <ul>
-          <li> <a href="#sightseeing">Sightseeing</a></li>
-          <li> <a href="#touren">Touren</a></li>
-          <li><a href="#hotels">Hotels</a></li>
-          <li><a href="#weitereangebote">Weitere Angebote</a></li>
-          <li><a href="#kontakt">kontakt</a></li>
-        </ul>
-      </nav>
-      <h1 class="site-title"><img src="img/sitetitle.png" alt="site-titele"></h1>
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li> <a href="#sightseeing">Sightseeing</a></li>
+            <li> <a href="#touren">Touren</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#weitereangebote">Weitere Angebote</a></li>
+            <li><a href="#kontakt">kontakt</a></li>
+          </ul>
+        </nav>
+        <h1 class="site-title"><img src="img/sitetitle.png" alt="site-titele"></h1>
+     </div>
     </header>
 
     <main>
       <section id="sightseeing">
-        <div class="sightseeing-img fixed-bg">
+        <div class="sec-img fixed-bg">
           <h2 class="sec-title">Sightseeing</h2>
         </div>
 
-        <div class="sec-item">
+        <div class="sec-item wrapper">
           <h3 class="item-title">Sehenswürdigkeiten in Berlin</h3>
           <p>Berlins Sehenswürdigkeiten, Schlösser und Denkmäler mit Adresse, Informationen, Fotos und Verkehrsverbindung. Dazu Sehenswertes wie Skulpturen, historische Bauwerke, Kirchen, Friedhöfe, besondere Gebäude und Architektur.</p>
           <h3 class="item-title">Parks & Gärten in Berlin</h3>
@@ -38,18 +40,18 @@
         </div>
 
         <div class="sec-btn">
-          <a class="btn" href="#"><span>Hier erfahren Sie mehr...</span></a>
+          <a class="btn" href="#">Hier erfahren Sie mehr...</a>
         </div>
 
       </section>
 
       <section id="touren">
-        <div class="touren-img fixed-bg">
+        <div class="sec-img fixed-bg">
           <h2 class="sec-title">Touren</h2>
         </div>
 
 
-        <div class="sec-item">
+        <div class="sec-item wrapper">
           <h3 class="item-title">Dampferfahrten & Schiffstouren</h3>
           <p>Vom Wasser aus lassen sich nicht nur zahlreiche Sehenswürdigkeiten in der City erkunden, sondern auch Berlins idyllische Flecken, Orte der Industriekultur und die wundervolle Seenlandschaft, die sich an Berlins Rändern anschließt. Ganz gleich wonach Ihnen der Sinn steht: informativer Kurztrip auf dem Schiff oder eine ausgedehnte Fahrt mit dem Schiff über Seen - hier finden Sie die passende Bootstour.</p>
           <h3 class="item-title">Stadtrundfahrten in Berlin</h3>
@@ -60,17 +62,17 @@
         </div>
 
         <div class="sec-btn">
-          <a class="btn" href="#"><span>Hier erfahren Sie mehr...</span></a>
+          <a class="btn" href="#">Hier erfahren Sie mehr...</a>
         </div>
 
       </section>
 
       <section id="hotels">
-        <div class="hotels-img fixed-bg">
+        <div class="sec-img fixed-bg">
           <h2 class="sec-title">Hotels & Unterkünfte</h2>
         </div>
 
-        <div class="sec-item">
+        <div class="sec-item wrapper">
           <h3 class="item-title">Hotels in Berlin 1-5 Sterne</h3>
           <p>Günstige Hotels in Berlin mit Standardausstattung für mittlere Ansprüche und einfache Hotels der Touristenklasse. Komfort-Klasse Hotels mit gehobenem Standard in Berlin First-Class Hotels in Berlin für hohe Ansprüche Berliner Hotels der Luxusklasse für höchste Ansprüche.</p>
           <h3 class="item-title">Themenhotels in Berlin</h3>
@@ -81,18 +83,18 @@
         </div>
 
         <div class="sec-btn">
-          <a class="btn" href="#"><span>Hier erfahren Sie mehr...</span></a>
+          <a class="btn" href="#">Hier erfahren Sie mehr...</a>
         </div>
 
       </section>
 
 
       <section id="weitereangebote">
-        <div class="weitereangebote-img fixed-bg">
+        <div class="sec-img fixed-bg">
           <h2 class="sec-title">Weitere Angebote</h2>
         </div>
 
-        <div class="sec-item">
+        <div class="sec-item wrapper">
           <h3 class="item-title">Museumsführer Berlin</h3>
           <p>Mehr als 175 Berliner Museen bewahren Geschichte, Kunst und Wissen. Weltberühmte Kunstschätze wie die Büste der Königin Nofretete im Neuen Museum und der Pergamon-Altar im Pergamonmuseum sind beliebte Ziele.</p>
           <h3 class="item-title">Ausstellungen in Berlin</h3>
@@ -103,17 +105,17 @@
         </div>
 
         <div class="sec-btn">
-          <a class="btn" href="#"><span>Hier erfahren Sie mehr...</span></a>
+          <a class="btn" href="#">Hier erfahren Sie mehr...</a>
         </div>
 
       </section>
 
       <section id="kontakt">
-        <div class="kontakt-img fixed-bg">
+        <div class="sec-img fixed-bg">
           <h2 class="sec-title">Kontakt</h2>
         </div>
 
-        <div class="contact">
+        <div class="contact wrapper">
           <form class="" action="index.html" method="post">
             <div class="control">
               <label for="name">Name</label>
@@ -131,8 +133,9 @@
               </textarea>
 
             </div>
-
-            <input type="submit" class="contact-submit" value="Nachricht abschicken">
+            <div class="sec-btn">
+              <button type="submit" class="contact-submit btn" onclick="location.href='#'">Nachricht abschicken</button>
+            </div>
           </form>
         </div>
 
@@ -142,45 +145,47 @@
 
     <footer id="footer">
 
-      <div class="footer-left">
-        <p class="infomation">Tel : 00-000-0000 <br>Alexanderpl. 00, 10178, Berlin<br>Mo - Fri 9.00 - 18.00</p>
+        <div class="footer-item">
+          <p class="infomation">Tel : 00-000-0000 <br>Alexanderpl. 00, 10178, Berlin<br>Mo - Fri 9.00 - 18.00</p>
+        
+        
+          <ul>
+            <li class="facebook">
+             <a href="#">
+               <img src="img/icons8-facebook-50.png" alt="facebook">
+             </a>
+            </li>
+           <li class="pinterest">
+              <a href="#">
+               <img src="img/icons8-pinterest-50.png" alt="pinterest">
+              </a>
+            </li>
+            <li class="instagram">
+             <a href="#">
+                <img src="img/icons8-instagram-50.png" alt="instagram">
+             </a>
+            </li>
+            <li class="tiktok">
+              <a href="#">
+               <img src="img/icons8-tick-tack-50.png" alt="tiktok">
+              </a>
+            </li>
+            <li class="whatsapp">
+             <a href="#">
+               <img src="img/icons8-whatsapp-50.png" alt="whatsapp">
+              </a>
+            </li>
+          </ul>
 
-        <ul>
-          <li class="facebook">
-            <a href="#">
-              <img src="img/icons8-facebook-50.png" alt="facebook">
-            </a>
-          </li>
-          <li class="pinterest">
-            <a href="#">
-              <img src="img/icons8-pinterest-50.png" alt="pinterest">
-            </a>
-          </li>
-          <li class="instagram">
-            <a href="#">
-              <img src="img/icons8-instagram-50.png" alt="instagram">
-            </a>
-          </li>
-          <li class="tiktok">
-            <a href="#">
-              <img src="img/icons8-tick-tack-50.png" alt="tiktok">
-            </a>
-          </li>
-          <li class="whatsapp">
-            <a href="#">
-              <img src="img/icons8-whatsapp-50.png" alt="whatsapp">
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <p class="copyright">copyright 2023</p>
-
+        </div>
+        <div class="footer-item">
+          <p class="copyright">copyright 2023</p>
+       </div>
       <a class="top-btn" href="#header"><img src="img/top-button2.png" alt="top-button"></a>
-
-
-
+    
     </footer>
+
+    
     <script src="script.js"></script>
   </body>
 </html>
