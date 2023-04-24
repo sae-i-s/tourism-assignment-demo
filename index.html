@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tourismusvereinbands</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <header id="header">
       <div class="wrapper">
-        <nav>
+        <nav class="menu-desktop">
           <ul>
             <li> <a href="#sightseeing">Sightseeing</a></li>
             <li> <a href="#touren">Touren</a></li>
@@ -19,6 +20,22 @@
             <li><a href="#kontakt">kontakt</a></li>
           </ul>
         </nav>
+
+        <!-- responsive menu -->
+        <div class="menu-responsive">
+         <button type="button" class="menu-btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="menu">
+            <div class="menu__item"><a href="#sightseeing">Sightseeing</a></div>
+            <div class="menu__item"><a href="#touren">Touren</a></div>
+            <div class="menu__item"><a href="#hotels">Hotels</a></div>
+            <div class="menu__item"><a href="#weitereangebote">Weitere Angebote</a></div>
+           <div class="menu__item"><a href="#kontakt">kontakt</a></div>
+         </div>
+        </div>
+        <!-- until here responsive menu -->
+
         <h1 class="site-title"><img src="img/sitetitle.png" alt="site-titele"></h1>
      </div>
     </header>
